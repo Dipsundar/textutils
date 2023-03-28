@@ -52,9 +52,10 @@ function App() {
         <Alert alert={alert} />
         <div className="container">
           <Routes>
-          <Route exact path="/textutils/" element={<TextForm showAlert={showAlert} heading="Enter the text to analyze" mode={mode} />} />
-            <Route exact path="/about" element={<About />} />
-            <Route exact path="/" element={<TextForm showAlert={showAlert} heading="Enter the text to analyze" mode={mode} />} />
+             <Route exact path="" element={<TextForm showAlert={showAlert} heading="Enter the text to analyze" mode={mode} />} />
+             <Route exact path="/textutils/" element={<TextForm showAlert={showAlert} heading="Enter the text to analyze" mode={mode} />} />
+             <Route exact path="/about" element={<About />} />
+              <Route exact path="/" element={<TextForm showAlert={showAlert} heading="Enter the text to analyze" mode={mode} />} />
           </Routes>
         </div>
         <Footer footerText='2023 dipsundarmajhi@gmail.com' />
